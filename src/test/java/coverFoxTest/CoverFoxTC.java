@@ -72,7 +72,7 @@ public class CoverFoxTC extends Base{
 	  @Test
 	  public void validateBanners() throws InterruptedException {
 		  Thread.sleep(4000);
-		  Assert.fail();
+		 // Assert.fail();
 		  logger.info("validating banner");
 		  int stringPlanNumber = resultPage.getPlanNumbersFromString();
 		  int totalNoOfPlanOnBanner = resultPage.getNumberOfPlanFromBanners();
@@ -86,7 +86,7 @@ public class CoverFoxTC extends Base{
 	  public void validatePresenceOfSortButton() throws InterruptedException, IOException
 	  {
 		    Thread.sleep(4000);
-		   Assert.fail();
+		   //Assert.fail();
 		    logger.info("validating presence of sort button");
 		    Assert.assertTrue(resultPage.sortPlanFilterIsDisplayed(), "sortButton is not displayed,TC failed");
 		   //Utility.takeScreenShot(driver,"validatePresenceOfSortButton" );
